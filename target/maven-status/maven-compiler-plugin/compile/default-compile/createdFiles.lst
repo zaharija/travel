@@ -1,0 +1,6 @@
+com\veleri\rwa\oot\Dao\ApartmentDao.class
+com\veleri\rwa\oot\Comtroller\ApartmentController.class
+com\veleri\rwa\oot\Dao\ApartmentDao$1.class
+com\veleri\rwa\oot\Service\ApartmentService.class
+com\veleri\rwa\oot\Main.class
+com\veleri\rwa\oot\Entity\Apartment.class
