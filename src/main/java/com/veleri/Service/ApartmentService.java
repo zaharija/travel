@@ -1,7 +1,7 @@
-package com.veleri.rwa.oot.Service;
+package com.veleri.Service;
 
-import com.veleri.rwa.oot.Dao.ApartmentDao;
-import com.veleri.rwa.oot.Entity.Apartment;
+import com.veleri.Dao.ApartmentDao;
+import com.veleri.Entity.Apartment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,5 +18,17 @@ public class ApartmentService {
 
     public Apartment getApartmentById(int id) {
         return this.apartmentDao.getApartmentById(id);
+    }
+
+    public void removeApartmentById(int id) {
+        this.apartmentDao.removeApartmentById(id);
+    }
+
+    public void updateApartment(Apartment apartment){
+        this.apartmentDao.updateApartment(apartment);
+    }
+
+    public void insertApartment(Apartment apartment) {
+        this.apartmentDao.insertApartmentToDb(apartment);
     }
 }

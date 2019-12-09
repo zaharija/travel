@@ -1,6 +1,6 @@
-package com.veleri.rwa.oot.Dao;
+package com.veleri.Dao;
 
-import com.veleri.rwa.oot.Entity.Apartment;
+import com.veleri.Entity.Apartment;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -30,5 +30,21 @@ public class ApartmentDao {
 
     public Apartment getApartmentById(int id) {
         return this.apartments.get(id);
+    }
+
+    public void removeApartmentById(int id) {
+        this.apartments.remove(id);
+    }
+
+    public void updateApartment(Apartment apartment){
+        Apartment a = apartments.get(apartment.getId());
+        a.setPrice(apartment.getPrice());
+        a.setBeds(apartment.getBeds());
+        a.setStars(apartment.getStars());
+        apartments.put(apartment.getId(), apartment);
+    }
+
+    public void insertApartmentToDb(Apartment apartment) {
+        this.apartments.put(apartment.getId(), apartment);
     }
 }
