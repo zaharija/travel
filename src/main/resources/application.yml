@@ -1,0 +1,6 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/traveldb
+    username: postgres
+    password: password123
+    pool-size: 30
