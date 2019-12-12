@@ -14,12 +14,12 @@ public class ApartmentDaoMockupImpl implements ApartmentDao {
     static {
         apartments = new HashMap<Integer, Apartment>() {
             {
-                put(1, new Apartment(1, 50, 4, 2, null));
-                put(2, new Apartment(2, 70, 5, 2, null));
-                put(3, new Apartment(3, 60, 2, 3, null));
-                put(4, new Apartment(4, 100, 5, 3, null));
-                put(5, new Apartment(5, 100, 2, 4, null));
-                put(6, new Apartment(6, 220, 4, 5, null));
+                put(1, new Apartment(1, "50", "4", "2", null));
+                put(2, new Apartment(2, "70", "5", "2", null));
+                put(3, new Apartment(3, "60", "2", "3", null));
+                put(4, new Apartment(4, "100", "5", "3", null));
+                put(5, new Apartment(5, "100", "2", "4", null));
+                put(6, new Apartment(6, "220", "4", "5", null));
             }
         };
     }

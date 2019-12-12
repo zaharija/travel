@@ -2,24 +2,22 @@ package com.veleri.model;
 
 import java.util.Date;
 
-public class User {
+public class Owner {
     private int id;
     private String fullName;
     private String email;
-    private String password;
     private String phoneNumber;
     private Date joinDate;
 
-    public User(int id, String fullName, Date createdAt, String email, String password, String phoneNumber) {
+    public Owner(int id, String fullName, String email, String phoneNumber, Date createdAt) {
         this.id = id;
         this.fullName = fullName;
-        this.joinDate = createdAt;
         this.email = email;
-        this.password = password;
         this.phoneNumber = phoneNumber;
+        this.joinDate = createdAt;
     }
 
-    public User() {
+    public Owner() {
 
     }
 
@@ -53,14 +51,6 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getPhoneNumber() {

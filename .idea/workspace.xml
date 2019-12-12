@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcc6f58-d634-4c8f-a22e-a9bd6bbc9192" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/veleri/dao/ApartmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/veleri/dao/MongoApartmentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/veleri/datasource/PostgresDatasource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__TableMigration.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Controller/ApartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/controller/ApartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Dao/ApartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/dao/ApartmentDaoMockupImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Entity/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Apartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Entity/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/Service/ApartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/service/ApartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Comtroller/ApartmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Dao/ApartmentDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Dao/ApartmentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Entity/Apartment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/veleri/rwa/oot/Service/ApartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/dao/ApartmentDaoMockupImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/dao/ApartmentDaoMockupImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/model/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/Apartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/veleri/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/veleri/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__UserTable.sql" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

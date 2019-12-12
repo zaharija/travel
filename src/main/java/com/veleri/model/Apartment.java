@@ -2,12 +2,12 @@ package com.veleri.model;
 
 public class Apartment {
     private int id;
-    private double price;
-    private int beds;
-    private int stars;
+    private String price;
+    private String beds;
+    private String stars;
     private Place place;
 
-    public Apartment(int id, double price, int beds, int stars, Place place) {
+    public Apartment(int id, String price, String beds, String stars, Place place) {
         this.id = id;
         this.price = price;
         this.beds = beds;
@@ -27,27 +27,27 @@ public class Apartment {
         this.id = id;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public int getBeds() {
+    public String getBeds() {
         return beds;
     }
 
-    public void setBeds(int beds) {
+    public void setBeds(String beds) {
         this.beds = beds;
     }
 
-    public int getStars() {
+    public String getStars() {
         return stars;
     }
 
-    public void setStars(int stars) {
+    public void setStars(String stars) {
         this.stars = stars;
     }
 
