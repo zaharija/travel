@@ -1,24 +1,18 @@
 package com.veleri.model;
 
-import java.util.Date;
-
 public class Admin {
     private int id;
     private String fullName;
     private String email;
     private String password;
-    private Date joinDate;
+    private String token;
 
-    public Admin(int id, String fullName, Date createdAt, String email, String password) {
+    public Admin(int id, String fullName, String email, String password, String token) {
         this.id = id;
         this.fullName = fullName;
-        this.joinDate = createdAt;
         this.email = email;
         this.password = password;
-    }
-
-    public Admin() {
-
+        this.token = token;
     }
 
     public int getId() {
@@ -37,14 +31,6 @@ public class Admin {
         this.fullName = fullName;
     }
 
-    public Date getCreatedAt() {
-        return joinDate;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.joinDate = createdAt;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -59,5 +45,13 @@ public class Admin {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String password) {
+        this.token = token;
     }
 }

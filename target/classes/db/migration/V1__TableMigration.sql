@@ -19,6 +19,7 @@ CREATE TABLE owners (
 );
 CREATE TABLE apartments (
     id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
     price VARCHAR(50) NOT NULL,
     beds VARCHAR(50) NOT NULL,
     stars VARCHAR(50) NOT NULL,
@@ -29,6 +30,7 @@ CREATE TABLE bookings (
     id SERIAL PRIMARY KEY,
     bookingStart DATE NOT NULL,
     bookingEnd DATE NOT NULL,
+    user_id INTEGER REFERENCES users(id),
     apartment_id INTEGER REFERENCES apartments(id)
 );
 CREATE TABLE admins (

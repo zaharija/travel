@@ -1,16 +1,21 @@
 package com.veleri.service;
 
-import com.veleri.dao.ApartmentDaoMockupImpl;
+import com.veleri.dao.interfaces.ApartmentDao;
 import com.veleri.model.Apartment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 
 @Service
 public class ApartmentService {
+    private ApartmentDao apartmentDao;
+
     @Autowired
-    private ApartmentDaoMockupImpl apartmentDao;
+    public ApartmentService(@Qualifier("apartment")ApartmentDao apartmentDao) {
+        this.apartmentDao = apartmentDao;
+    }
 
     public Collection<Apartment> getAllApartments() {
         return this.apartmentDao.getAllApartments();

@@ -4,22 +4,17 @@ import java.util.Date;
 
 public class Booking {
     private int id;
-    private User user;
-    private Apartment apartment;
     private Date bookingStart;
     private Date bookingEnd;
-    private Date joinDate;
+    private User user;
+    private Apartment apartment;
 
-    public Booking(int id, User user, Date createdAt, Apartment apartment, Date bookingStart, Date bookingEnd) {
+    public Booking(int id, Date bookingStart, Date bookingEnd, User user, Apartment apartment) {
         this.id = id;
-        this.user = user;
-        this.joinDate = createdAt;
-        this.apartment = apartment;
         this.bookingStart = bookingStart;
-    }
-
-    public Booking() {
-
+        this.bookingEnd = bookingEnd;
+        this.user = user;
+        this.apartment = apartment;
     }
 
     public int getId() {
@@ -36,14 +31,6 @@ public class Booking {
 
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public Date getCreatedAt() {
-        return joinDate;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.joinDate = createdAt;
     }
 
     public Apartment getApartment() {

@@ -11,10 +11,6 @@ public class Place {
         this.county = county;
     }
 
-    public Place() {
-
-    }
-
     public int getId() {
         return id;
     }

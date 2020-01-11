@@ -1,4 +1,4 @@
-package com.veleri.dao;
+package com.veleri.dao.interfaces;
 
 import com.veleri.model.Apartment;
 

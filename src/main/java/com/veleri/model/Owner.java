@@ -7,18 +7,12 @@ public class Owner {
     private String fullName;
     private String email;
     private String phoneNumber;
-    private Date joinDate;
 
-    public Owner(int id, String fullName, String email, String phoneNumber, Date createdAt) {
+    public Owner(int id, String fullName, String email, String phoneNumber) {
         this.id = id;
         this.fullName = fullName;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.joinDate = createdAt;
-    }
-
-    public Owner() {
-
     }
 
     public int getId() {
@@ -35,14 +29,6 @@ public class Owner {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    public Date getCreatedAt() {
-        return joinDate;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.joinDate = createdAt;
     }
 
     public String getEmail() {

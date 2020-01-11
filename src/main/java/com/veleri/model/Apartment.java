@@ -2,21 +2,21 @@ package com.veleri.model;
 
 public class Apartment {
     private int id;
+    private String name;
     private String price;
     private String beds;
     private String stars;
     private Place place;
+    private Owner owner;
 
-    public Apartment(int id, String price, String beds, String stars, Place place) {
+    public Apartment(int id, String price, String name, String beds, String stars, Place place, Owner owner) {
         this.id = id;
+        this.name = name;
         this.price = price;
         this.beds = beds;
         this.stars = stars;
         this.place = place;
-    }
-
-    public Apartment() {
-
+        this.owner = owner;
     }
 
     public int getId() {
@@ -25,6 +25,14 @@ public class Apartment {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPrice() {
@@ -57,5 +65,13 @@ public class Apartment {
 
     public void setPlace(Place place) {
         this.place = place;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
     }
 }

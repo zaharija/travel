@@ -8,19 +8,15 @@ public class User {
     private String email;
     private String password;
     private String phoneNumber;
-    private Date joinDate;
+    private String token;
 
-    public User(int id, String fullName, Date createdAt, String email, String password, String phoneNumber) {
+    public User(int id, String fullName, String email, String password, String phoneNumber, String token) {
         this.id = id;
         this.fullName = fullName;
-        this.joinDate = createdAt;
         this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
-    }
-
-    public User() {
-
+        this.token = token;
     }
 
     public int getId() {
@@ -37,14 +33,6 @@ public class User {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    public Date getCreatedAt() {
-        return joinDate;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.joinDate = createdAt;
     }
 
     public String getEmail() {
@@ -69,5 +57,13 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
