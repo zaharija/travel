@@ -34,6 +34,29 @@ public class UserService {
     }
 
     public void insertUser(User user) {
-        this.userDao.insertUserToDb(user);
+        Collection<User> dbUsers = this.userDao.getAllUsers();
+        Boolean flag = false;
+        for (User dbUser : dbUsers) {
+            if(dbUser.getEmail().equals(user.getEmail())) {
+                flag = true;
+                break;
+            }
+        }
+        if(!flag) this.userDao.insertUserToDb(user);
+    }
+
+    public Boolean loginUser(User user) {
+        Collection<User> dbUsers = this.userDao.getAllUsers();
+        Boolean flag = false;
+        for (User dbUser : dbUsers) {
+            if(dbUser.getEmail().equals(user.getEmail())) {
+                if(dbUser.getPassword().equals(user.getPassword())) {
+                    flag = true;
+                    break;
+                }
+            }
+        }
+        if(flag) return true;
+        else return false;
     }
 }

@@ -65,7 +65,7 @@ public class PlaceDaoImpl implements PlaceDao {
     @Override
     public void insertPlaceToDb(Place place) {
         try {
-            String placeSql = "INSERT INTO places (name, email, county) VALUES (?, ?);";
+            String placeSql = "INSERT INTO places (name, county) VALUES (?, ?);";
             jdbcTemplate.update(placeSql, new Object[]{
                     place.getName(),
                     place.getCounty()

@@ -19,7 +19,7 @@ public class OwnerDaoImpl implements OwnerDao {
 
     @Override
     public Collection<Owner> getAllOwners() {
-        String adminSql = "SELECT * FROM admins;";
+        String adminSql = "SELECT * FROM owners;";
         return jdbcTemplate.query(adminSql, (resultSet, rowNumber) -> new Owner(
                         resultSet.getInt("id"),
                         resultSet.getString("full_name"),
@@ -31,7 +31,7 @@ public class OwnerDaoImpl implements OwnerDao {
 
     @Override
     public Owner getOwnerById(int id) {
-        String adminSql = "SELECT * FROM admins WHERE id = ?;";
+        String adminSql = "SELECT * FROM owners WHERE id = ?;";
         return jdbcTemplate.queryForObject(adminSql, new Object[]{id}, (resultSet, rowNumber) -> new Owner(
                         resultSet.getInt("id"),
                         resultSet.getString("full_name"),
@@ -54,7 +54,7 @@ public class OwnerDaoImpl implements OwnerDao {
     @Override
     public void updateOwner(Owner owner) {
         try {
-            String adminSql = "UPDATE admins SET full_name = ?, email = ?, password = ?, phone_number = ? WHERE id = ?;";
+            String adminSql = "UPDATE owners SET full_name = ?, email = ?, password = ?, phone_number = ? WHERE id = ?;";
             jdbcTemplate.update(adminSql, new Object[]{
                     owner.getFullName(),
                     owner.getEmail(),

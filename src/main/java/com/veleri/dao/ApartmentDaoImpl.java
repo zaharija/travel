@@ -23,7 +23,7 @@ public class ApartmentDaoImpl implements ApartmentDao {
     public Collection<Apartment> getAllApartments() {
         String apartmentSql = "SELECT * FROM apartments;";
         String placeSql = "SELECT * FROM places WHERE id = ?;";
-        String ownerSql = "SELECT * FROM places WHERE id = ?;";
+        String ownerSql = "SELECT * FROM owners WHERE id = ?;";
         return jdbcTemplate.query(apartmentSql, (resultSet, rowNumber) -> new Apartment(
                 resultSet.getInt("id"),
                 resultSet.getString("name"),
@@ -48,7 +48,7 @@ public class ApartmentDaoImpl implements ApartmentDao {
     public Apartment getApartmentById(int id) {
         String apartmentSql = "SELECT * FROM apartments WHERE id = ?;";
         String placeSql = "SELECT * FROM places WHERE id = ?;";
-        String ownerSql = "SELECT * FROM places WHERE id = ?;";
+        String ownerSql = "SELECT * FROM owners WHERE id = ?;";
         return jdbcTemplate.queryForObject(apartmentSql, new Object[]{id}, (resultSet, rowNumber) -> new Apartment(
                 resultSet.getInt("id"),
                 resultSet.getString("name"),
